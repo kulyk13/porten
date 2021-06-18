@@ -305,13 +305,10 @@ html {
   scroll-behavior: smooth;
 }
 :root {
-  --title-color: hsl(225, 57%, 21%);
+  --dark-bg-color: hsl(0, 0%, 0%);
   --text-color: hsl(0, 0%, 0%);
-  --text-on-dark-bg-color: hsl(225, 27%, 63%);
-  --dark-bg-color: hsl(225, 57%, 21%);
+  --header-text-color: hsl(0, 0%, 59%);
   --light-bg-color: hsl(228, 100%, 99%);
-  --brand-color: hsl(333, 86%, 48%);
-  --line-color: hsl(224, 49%, 33%);
 }
 body {
   color: var(--text-color);
@@ -321,7 +318,7 @@ body {
   font-size: 14px;
   font-weight: 400;
   line-height: 1.5;
-  background-color: var(--light-bg-color);
+  background-color: var(--dark-bg-color);
 }
 a,
 span,
@@ -337,3 +334,101 @@ button {
 button:hover,
 button:focus-within {
 }
+.container {
+  max-width: 1140px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+.container-wide {
+  max-width: 1920px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+/* ============ COMMON STYLES END ============ */
+
+/* ============ HEADER START ============ */
+.header,
+.header > i {
+  color: var(--header-text-color);
+}
+.header a:hover {
+  color: #fff;
+  transition: 0.3s;
+}
+.header-top {
+  padding: 15px 0;
+  font-size: 12px;
+}
+.header-top-content {
+  display: flex;
+  justify-content: space-between;
+}
+.info-part {
+  display: flex;
+  align-items: center;
+}
+.info-part .phone {
+  align-items: center;
+}
+.info-part .phone i {
+  margin-right: 15px;
+}
+.info-part p::before {
+  content: "|";
+  margin: 0 15px;
+}
+.login-part {
+  display: flex;
+  align-items: center;
+}
+.login-link {
+  align-items: center;
+}
+.login-link i {
+  margin-right: 10px;
+}
+.login-link::after {
+  content: "/";
+  margin: 0 4px;
+}
+.header-main {
+  background: #0f0f0f;
+  text-transform: uppercase;
+}
+.header-main-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.logo {
+  font-family: "Post No Bills Jaffna", serif;
+  font-weight: 700;
+  font-size: 36px;
+  color: #fff;
+}
+.nav {
+  display: flex;
+  align-items: center;
+}
+.pages {
+  display: flex;
+  align-items: center;
+}
+.pages a {
+  padding: 30px 20px;
+}
+.pages a:hover {
+  background: #1f1f1f;
+}
+.right-block {
+  color: #fff;
+  margin-left: 60px;
+  font-size: 18px;
+}
+.right-block a:last-child {
+  margin-left: 40px;
+}
+
+/* ============ HEADER END ============ */
