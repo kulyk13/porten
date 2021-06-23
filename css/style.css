@@ -306,9 +306,9 @@ html {
 }
 :root {
   --dark-bg-color: hsl(0, 0%, 0%);
-  --text-color: hsl(0, 0%, 0%);
+  --text-color: hsl(0, 0%, 100%);
   --header-text-color: hsl(0, 0%, 59%);
-  --light-bg-color: hsl(228, 100%, 99%);
+  --brand-color: hsl(0, 0%, 100%);
 }
 body {
   color: var(--text-color);
@@ -354,7 +354,7 @@ button:focus-within {
   color: var(--header-text-color);
 }
 .header a:hover {
-  color: #fff;
+  color: var(--brand-color);
   transition: 0.3s;
 }
 .header-top {
@@ -406,7 +406,7 @@ button:focus-within {
   font-family: "Post No Bills Jaffna", serif;
   font-weight: 700;
   font-size: 36px;
-  color: #fff;
+  color: var(--text-color);
 }
 .nav {
   display: flex;
@@ -423,12 +423,55 @@ button:focus-within {
   background: #1f1f1f;
 }
 .right-block {
-  color: #fff;
+  color: var(--text-color);
   margin-left: 60px;
   font-size: 18px;
 }
 .right-block a:last-child {
   margin-left: 40px;
 }
-
 /* ============ HEADER END ============ */
+
+/* ============ HERO START ============ */
+.hero-section {
+  background: linear-gradient(
+      0deg,
+      rgba(15, 15, 15, 0.5),
+      rgba(15, 15, 15, 0.5)
+    ),
+    url(../img/hero.webp) no-repeat 50% / cover;
+  text-align: center;
+  padding: 160px 0;
+}
+.logo-group {
+  border: 4px solid var(--brand-color);
+  display: inline-flex;
+  flex-direction: column;
+  padding: 94px 64px;
+  margin-bottom: 80px;
+}
+.logo-group p {
+  font-size: 22px;
+  text-transform: uppercase;
+}
+h1 {
+  font-family: "Post No Bills Jaffna", serif;
+  font-size: 64px;
+  text-transform: uppercase;
+  margin-bottom: 5px;
+}
+h1::after {
+  content: "";
+  display: flex;
+  height: 2px;
+  width: 180px;
+  background: var(--brand-color);
+  margin-top: -12px;
+}
+.hero-text {
+  text-transform: uppercase;
+  margin: 0 auto;
+  font-size: 16px;
+  width: 730px;
+}
+/* ============ HERO END ============ */
