@@ -344,7 +344,13 @@ button:focus-within {
   max-width: 1920px;
   width: 100%;
   margin: 0 auto;
-  padding: 0 15px;
+}
+.section-title {
+  font-family: "Playfair Display";
+  font-size: 36px;
+  font-weight: 700;
+  text-transform: uppercase;
+  text-align: center;
 }
 /* ============ COMMON STYLES END ============ */
 
@@ -475,3 +481,127 @@ h1::after {
   width: 730px;
 }
 /* ============ HERO END ============ */
+
+/* ============ COLLECTION START ============ */
+.collections-block {
+  font-family: "Playfair Display";
+}
+.collection {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.collection:nth-child(odd) > .collection-image-block {
+  order: 1;
+}
+.collection-image-block {
+  position: relative;
+}
+.collection-image-wrap {
+  position: relative;
+}
+.collection-image-wrap::after {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(
+    0deg,
+    rgba(15, 15, 15, 0.5),
+    rgba(15, 15, 15, 0.5)
+  );
+}
+.collection-image {
+  width: 880px;
+  height: 730px;
+  object-fit: cover;
+}
+.collection-image.second {
+  height: auto;
+}
+.cta {
+  position: absolute;
+  bottom: 100px;
+  left: 252px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.btn {
+  text-transform: uppercase;
+  font-family: "PT Sans", sans-serif;
+  font-size: 18px;
+  letter-spacing: 0.1em;
+  padding: 12px 28px;
+  border: 1px solid var(--brand-color);
+  justify-content: center;
+  transition: 0.4s;
+}
+.btn:hover {
+  color: var(--dark-bg-color);
+  background-color: var(--brand-color);
+}
+.collection-products {
+  width: 50%;
+  padding-left: 80px;
+}
+.collections-block .section-title {
+  margin-bottom: 45px;
+}
+.collections-block .section-title::after {
+  content: "";
+  display: block;
+  width: 120px;
+  height: 1px;
+  background: var(--brand-color);
+  margin: 40px auto 0 auto;
+}
+.cards-block {
+  display: flex;
+  justify-content: space-between;
+}
+.card {
+  transition: 0.3s;
+}
+.card:hover {
+  transform: scale(1.05);
+}
+.card-pic-block {
+  padding: 55px 22px;
+  width: 260px;
+  height: 325px;
+  background: #191b1c;
+  margin-bottom: 25px;
+}
+.card-img {
+  width: 215px;
+  height: auto;
+}
+.card-title {
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+.card-price {
+  font-size: 16px;
+  font-weight: 700;
+  margin-top: auto;
+}
+.collection-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 0 275px;
+}
+.section-title.third {
+  font-weight: 400;
+}
+.collection-text {
+  text-align: center;
+  margin-bottom: 60px;
+  font-family: "PT Sans", sans-serif;
+  font-size: 14px;
+}
+/* ============ COLLECTION END ============ */
