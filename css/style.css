@@ -607,6 +607,7 @@ h1::after {
 /* ============ NEW START ============ */
 .new-products {
   padding-top: 120px;
+  padding-bottom: 105px;
 }
 .new-products .section-title {
   margin-bottom: 80px;
@@ -620,3 +621,19 @@ h1::after {
   margin-top: 40px;
 }
 /* ============ NEW END ============ */
+
+/* ============ NEW START ============ */
+.our-brands {
+  padding-top: 105px;
+  padding-bottom: 80px;
+}
+.brands {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.brand-pic {
+  width: 255px;
+  height: 94px;
+}
+/* ============ NEW START ============ */
