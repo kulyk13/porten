@@ -351,6 +351,15 @@ button:focus-within {
   font-weight: 700;
   text-transform: uppercase;
   text-align: center;
+  margin-bottom: 45px;
+}
+.section-title::after {
+  content: "";
+  display: block;
+  width: 120px;
+  height: 1px;
+  background: var(--brand-color);
+  margin: 40px auto 0 auto;
 }
 /* ============ COMMON STYLES END ============ */
 
@@ -548,17 +557,6 @@ h1::after {
   width: 50%;
   padding-left: 80px;
 }
-.collections-block .section-title {
-  margin-bottom: 45px;
-}
-.collections-block .section-title::after {
-  content: "";
-  display: block;
-  width: 120px;
-  height: 1px;
-  background: var(--brand-color);
-  margin: 40px auto 0 auto;
-}
 .cards-block {
   display: flex;
   justify-content: space-between;
@@ -605,3 +603,20 @@ h1::after {
   font-size: 14px;
 }
 /* ============ COLLECTION END ============ */
+
+/* ============ NEW START ============ */
+.new-products {
+  padding-top: 120px;
+}
+.new-products .section-title {
+  margin-bottom: 80px;
+}
+.new-products-cards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.new-products-cards > .card:nth-child(n + 5) {
+  margin-top: 40px;
+}
+/* ============ NEW END ============ */
