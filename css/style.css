@@ -579,7 +579,6 @@ h1::after {
 .card-img {
   width: 215px;
   height: auto;
-  background: #564850;
 }
 .card-title {
   font-size: 18px;
@@ -696,6 +695,7 @@ h1::after {
   width: 210px;
   height: 45px;
   padding: 10px 22px 10px 15px;
+  color: #fff;
   background: hsla(0, 0%, 100%, 0.4);
 }
 .btn-form {
