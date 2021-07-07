@@ -527,9 +527,11 @@ h1::after {
   width: 880px;
   height: 730px;
   object-fit: cover;
+  background: #413b42;
 }
 .collection-image.second {
   height: auto;
+  background: #2f2f2f;
 }
 .cta {
   position: absolute;
@@ -577,6 +579,7 @@ h1::after {
 .card-img {
   width: 215px;
   height: auto;
+  background: #564850;
 }
 .card-title {
   font-size: 18px;
