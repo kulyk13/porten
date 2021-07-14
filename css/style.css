@@ -462,6 +462,7 @@ button:focus-within {
   border: 4px solid var(--brand-color);
   display: inline-flex;
   flex-direction: column;
+  justify-content: center;
   padding: 94px 64px;
   margin-bottom: 80px;
 }
@@ -571,8 +572,6 @@ h1::after {
 }
 .card-pic-block {
   padding: 55px 22px;
-  width: 260px;
-  height: 325px;
   background: #191b1c;
   margin-bottom: 25px;
 }
@@ -618,6 +617,7 @@ h1::after {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
+  font-family: "Playfair Display", serif;
 }
 .new-products-cards > .card:nth-child(n + 5) {
   margin-top: 40px;
@@ -631,6 +631,7 @@ h1::after {
 }
 .brands {
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-between;
   align-items: center;
 }
@@ -723,3 +724,103 @@ h1::after {
   padding: 16px 0;
 }
 /* ============ FOOTER END ============ */
+
+/* ============ ADAPTIVE START ============ */
+@media (max-width: 1706px) {
+  .collection-image {
+    width: 780px;
+    height: 647px;
+  }
+  .cta {
+    left: 202px;
+  }
+  .cards-block .card-img {
+    width: 190px;
+  }
+  .collection-content {
+    padding: 0 220px;
+  }
+}
+@media (max-width: 1599.98px) {
+  .collection-image {
+    width: 699px;
+    height: 580px;
+  }
+  .cta {
+    left: 162px;
+  }
+  .cards-block .card-pic-block {
+    padding: 35px 10px;
+  }
+  .collection-content {
+    padding: 0 175px;
+  }
+}
+@media (max-width: 1499.98px) {
+  .collection-image {
+    width: 640px;
+    height: 530px;
+  }
+  .cta {
+    left: 132px;
+  }
+  .collection-products {
+    padding-left: 40px;
+  }
+  .cards-block {
+    justify-content: space-evenly;
+  }
+  .cards-block .card-pic-block {
+    padding: 35px 10px;
+  }
+  .cards-block .card-img {
+    width: 150px;
+  }
+  .collection-content {
+    padding: 0 140px;
+  }
+}
+@media (max-width: 1299.98px) {
+  .section-title {
+    font-size: 32px;
+    margin-bottom: 35px;
+  }
+  .section-title::after {
+    margin: 25px auto 0 auto;
+  }
+  .collection-image {
+    width: 590px;
+    height: 489px;
+  }
+  .cta {
+    left: 128px;
+    bottom: 50px;
+  }
+  .btn {
+    font-size: 14px;
+  }
+  .collection-content {
+    padding: 0 74px;
+  }
+}
+@media (max-width: 1199.98px) {
+  .container {
+    width: 960px;
+  }
+}
+@media (max-width: 991.98px) {
+  .container {
+    width: 720px;
+  }
+}
+@media (max-width: 767.98px) {
+  .container {
+    width: 540px;
+  }
+}
+@media (max-width: 575.98px) {
+  .container {
+    width: 100%;
+  }
+}
+/* ============ ADAPTIVE END ============ */
