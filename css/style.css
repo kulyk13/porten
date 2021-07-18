@@ -888,6 +888,70 @@ h1::after {
   .container {
     width: 720px;
   }
+  .hero-section {
+    padding: 100px 0;
+  }
+  .hero-text {
+    width: 650px;
+  }
+  .collection {
+    flex-direction: column;
+  }
+  .collection:nth-child(odd) > .collection-image-block {
+    order: -1;
+  }
+  .collection-image {
+    width: 750px;
+    height: 622px;
+  }
+  .cta {
+    left: 219px;
+    bottom: 80px;
+  }
+  .collection-products {
+    margin: 50px 0;
+    width: 90%;
+  }
+  .cards-block .card-pic-block {
+    padding: 35px 10px;
+  }
+  .cards-block .card-img {
+    width: 160px;
+  }
+  .collection-content {
+    margin-top: 50px;
+  }
+  .new-products-cards > .card:nth-child(n + 4) {
+    margin-top: 40px;
+  }
+  .footer-wrap {
+    padding-top: 50px;
+    padding-bottom: 70px;
+  }
+  .footer-title {
+    margin-bottom: 20px;
+  }
+  .footer-content {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+  .about,
+  .categories,
+  .mailing {
+    width: auto;
+    padding: 0 100px;
+  }
+  .categories,
+  .mailing {
+    margin-top: 30px;
+  }
+  .categories-btn:nth-child(4) {
+    margin-top: 0;
+  }
+  .form {
+    justify-content: center;
+  }
 }
 @media (max-width: 767.98px) {
   .container {
