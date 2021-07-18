@@ -807,6 +807,82 @@ h1::after {
   .container {
     width: 960px;
   }
+  .section-title {
+    font-size: 30px;
+    margin-bottom: 25px;
+  }
+  .section-title::after {
+    margin: 20px auto 0 auto;
+  }
+  .collection-image {
+    width: 496px;
+    height: 411px;
+  }
+  .cta {
+    left: 92px;
+    bottom: 35px;
+  }
+  .collection-products {
+    padding-left: 0;
+  }
+  .cards-block .card-img {
+    width: 125px;
+  }
+  .cards-block .card-pic-block {
+    padding: 25px 5px;
+  }
+  .cards-block .card-title {
+    font-size: 16px;
+  }
+  .cards-block .card-price {
+    font-size: 14px;
+  }
+  .collection-text {
+    font-size: 12px;
+    margin-bottom: 25px;
+  }
+  .new-products {
+    padding-top: 100px;
+    padding-bottom: 50px;
+  }
+  .new-products .section-title {
+    margin-bottom: 40px;
+  }
+  .card-pic-block {
+    padding: 45px 17px;
+    margin-bottom: 17px;
+  }
+  .card-img {
+    width: 180px;
+  }
+  .our-brands {
+    padding-top: 50px;
+  }
+  .brand-pic {
+    width: 170px;
+    height: 62px;
+  }
+  .about {
+    width: 34%;
+  }
+  .categories {
+    width: 21%;
+  }
+  .categories-btn:nth-last-child(n + 2) {
+    margin-right: 8px;
+  }
+  .mailing {
+    width: 35%;
+  }
+  .input {
+    width: 210px;
+    height: 45px;
+    padding: 10px 22px 10px 15px;
+  }
+  .btn-form {
+    font-size: 12px;
+    padding: 10px 10px;
+  }
 }
 @media (max-width: 991.98px) {
   .container {
