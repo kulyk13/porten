@@ -20,43 +20,99 @@
 
 <body>
     <header class="header">
-        <div class="header-top">
-            <div class="container header-top-content">
-                <div class="info-part">
-                    <a href="tel:88121234567" class="phone">
-                        <i class="fas fa-phone-alt"></i>
-                        8 (812) 123-45-67
-                    </a>
-                    <p>Работаем 7 дней в неделю</p>
-                    <p>9:00 — 18:00</p>
+        <div class="desktop-header">
+            <div class="header-top">
+                <div class="container header-top-content">
+                    <div class="info-part">
+                        <a href="tel:88121234567" class="phone">
+                            <i class="fas fa-phone-alt"></i>
+                            8 (812) 123-45-67
+                        </a>
+                        <p>Работаем 7 дней в неделю</p>
+                        <p>9:00 — 18:00</p>
+                    </div>
+                    <div class="login-part">
+                        <a href="#" class="login-link">
+                            <i class="fas fa-sign-in-alt"></i>
+                            Войти
+                        </a>
+                        <a href="#" class="registration-link">Регистрация</a>
+                    </div>
                 </div>
-                <div class="login-part">
-                    <a href="#" class="login-link">
-                        <i class="fas fa-sign-in-alt"></i>
-                        Войти
-                    </a>
-                    <a href="#" class="registration-link">Регистрация</a>
+            </div>
+            <div class="header-main">
+                <div class="container header-main-content">
+                    <a href="index.html" class="logo">Porten</a>
+                    <nav class="nav">
+                        <ul class="pages">
+                            <li><a href="#">Понравилось</a></li>
+                            <li><a href="#">Личный кабинет</a></li>
+                            <li><a href="#">Настройки</a></li>
+                        </ul>
+                        <div class="search-products-block">
+                            <a href="#" class="cart" aria-label="cart">
+                                <i class="fas fa-shopping-cart"></i>
+                            </a>
+                            <a href="#" class="search" aria-label="search"><i
+                                    class="fas fa-search"></i></a>
+                        </div>
+                    </nav>
                 </div>
             </div>
         </div>
-        <div class="header-main">
-            <div class="container header-main-content">
-                <a href="index.html" class="logo">Porten</a>
-                <nav class="nav">
-                    <ul class="pages">
-                        <li><a href="#">Понравилось</a></li>
-                        <li><a href="#">Личный кабинет</a></li>
-                        <li><a href="#">Настройки</a></li>
-                    </ul>
-                    <div class="right-block">
-                        <a href="#" class="cart" aria-label="cart">
-                            <i class="fas fa-shopping-cart"></i>
+        <div class="mobile-header">
+            <div class="header-top">
+                <div class="container header-top-content">
+                    <div class="info-part">
+                        <a href="tel:88121234567" class="phone">
+                            <i class="fas fa-phone-alt"></i>
+                            8 (812) 123-45-67
                         </a>
-                        <a href="#" class="search" aria-label="search"><i
-                                class="fas fa-search"></i></a>
+                        <p>Работаем 7 дней в неделю</p>
+                        <p>9:00 — 18:00</p>
                     </div>
-                </nav>
+                </div>
             </div>
+            <div class="header-main">
+                <div class="container header-main-content">
+                    <a href="index.html" class="logo">Porten</a>
+                    <div id="burgerMenu" class="burger-menu">
+                        <div class="burger-menu-content">
+                            <nav class="nav">
+                                <ul class="pages">
+                                    <li><a href="#">Понравилось</a></li>
+                                    <li><a href="#">Личный кабинет</a></li>
+                                    <li><a href="#">Настройки</a></li>
+                                </ul>
+                                <div class="search-products-block">
+                                    <a href="#" class="cart" aria-label="cart">
+                                        <i class="fas fa-shopping-cart"></i>
+                                    </a>
+                                    <a href="#" class="search"
+                                        aria-label="search"><i
+                                            class="fas fa-search"></i></a>
+                                </div>
+                                <div class="login-part">
+                                    <a href="#" class="login-link">
+                                        <i class="fas fa-sign-in-alt"></i>
+                                        Войти
+                                    </a>
+                                    <a href="#"
+                                        class="registration-link">Регистрация</a>
+                                </div>
+                            </nav>
+                            <button id="burgerBtnClose"
+                                class="btn burger-btn close">
+                                <i class="fas fa-times"></i>
+                            </button>
+                        </div>
+                    </div>
+                    <button id="burgerBtnOpen" class="btn burger-btn open">
+                        <i class="fas fa-bars"></i>
+                    </button>
+                </div>
+            </div>
+
         </div>
     </header>
     <section class="hero-section">
@@ -328,6 +384,14 @@
             <p>© 2020 Все права защищены</p>
         </div>
     </footer>
+
+    <script>
+        burgerBtnOpen.onclick = () => burgerMenu.classList.add('open');
+        burgerBtnClose.onclick = () => burgerMenu.classList.remove('open');
+        window.addEventListener('load', ev => {
+            burgerMenu.classList.add('transition')
+        });
+    </script>
 </body>
 
 </html>

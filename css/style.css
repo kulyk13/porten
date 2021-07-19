@@ -330,6 +330,8 @@ span,
 }
 
 button {
+  background-color: transparent;
+  color: #fff;
 }
 button:hover,
 button:focus-within {
@@ -437,13 +439,16 @@ button:focus-within {
 .pages a:hover {
   background: #1f1f1f;
 }
-.right-block {
+.search-products-block {
   color: var(--text-color);
   margin-left: 60px;
   font-size: 18px;
 }
-.right-block a:last-child {
+.search-products-block a:last-child {
   margin-left: 40px;
+}
+.mobile-header {
+  display: none;
 }
 /* ============ HEADER END ============ */
 
@@ -956,6 +961,71 @@ h1::after {
 @media (max-width: 767.98px) {
   .container {
     width: 540px;
+  }
+  .desktop-header {
+    display: none;
+  }
+  .mobile-header {
+    display: block;
+  }
+  .header-top-content {
+    justify-content: center;
+  }
+  .burger-menu {
+    position: fixed;
+    padding: 30px 15px 50px 15px;
+    right: 0;
+    top: 0;
+    z-index: 10;
+    overflow-y: auto;
+    background: var(--dark-bg-color);
+    width: 50%;
+    height: 100vh;
+    transform: translateX(+100%);
+  }
+  .burger-menu.open {
+    transform: translateX(0);
+  }
+  .burger-menu.transition {
+    transition: 0.3s;
+  }
+  .burger-menu-content {
+    position: relative;
+    padding-top: 110px;
+  }
+  .burger-btn.close {
+    position: absolute;
+    right: 11px;
+    top: 21px;
+  }
+  .nav {
+    flex-direction: column;
+  }
+  .pages {
+    flex-direction: column;
+  }
+  .search-products-block {
+    margin: 20px 0 35px 0;
+  }
+  .hero-text {
+    width: 500px;
+  }
+  .collection-image {
+    width: 559px;
+    height: 464px;
+  }
+  .cta {
+    left: 123px;
+  }
+  .cards-block .card-img {
+    width: 125px;
+  }
+  .new-products-cards > .card:nth-child(n + 3) {
+    margin-top: 40px;
+  }
+  .brand-pic {
+    width: 255px;
+    height: 94px;
   }
 }
 @media (max-width: 575.98px) {
