@@ -3,7 +3,7 @@
 
 <head>
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link rel="preload" as="style" href="css/style.css" type="text">
+    <link rel="preload" as="style" href="css/style.css" type="text/css">
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -16,6 +16,7 @@
         integrity="sha384-SZXxX4whJ79/gErwcOYf+zWLeJdY/qpuqC4cAa9rOGUstPomtqpuNWT9wdPEn2fk"
         crossorigin="anonymous">
     <link rel="stylesheet" href="css/style.css">
+
 </head>
 
 <body>
@@ -149,44 +150,67 @@
                 <div class="collection-products">
                     <h2 class="section-title">Сезон 2020/21</h2>
                     <div class="cards-block">
-                        <div class="card">
-                            <a href="#">
-                                <div class="card-pic-block">
-                                    <img src="./img/watch.webp" width="1"
-                                        height="1" alt="watch" class="card-img"
-                                        loading="lazy">
+                        <div class="swiper-container collection-slider">
+                            <!-- Additional required wrapper -->
+                            <div class="swiper-wrapper">
+                                <!-- Slides -->
+                                <div class="swiper-slide">
+                                    <div class="card">
+                                        <a href="#">
+                                            <div class="card-pic-block">
+                                                <img src="./img/watch.webp"
+                                                    width="1" height="1"
+                                                    alt="watch" class="card-img"
+                                                    loading="lazy">
+                                            </div>
+                                        </a>
+                                        <div class="card-description">
+                                            <h3 class="card-title">Louis XVI
+                                                ATHOS</h3>
+                                            <h4 class="card-price">165 000 руб.
+                                            </h4>
+                                        </div>
+                                    </div>
                                 </div>
-                            </a>
-                            <div class="card-description">
-                                <h3 class="card-title">Louis XVI ATHOS</h3>
-                                <h4 class="card-price">165 000 руб. </h4>
-                            </div>
-                        </div>
-                        <div class="card">
-                            <a href="#">
-                                <div class="card-pic-block">
-                                    <img src="./img/watch.webp" width="1"
-                                        height="1" alt="watch" class="card-img"
-                                        loading="lazy">
+                                <div class="swiper-slide">
+                                    <div class="card">
+                                        <a href="#">
+                                            <div class="card-pic-block">
+                                                <img src="./img/watch.webp"
+                                                    width="1" height="1"
+                                                    alt="watch" class="card-img"
+                                                    loading="lazy">
+                                            </div>
+                                        </a>
+                                        <div class="card-description">
+                                            <h3 class="card-title">Louis XVI
+                                                ATHOS</h3>
+                                            <h4 class="card-price">165 000 руб.
+                                            </h4>
+                                        </div>
+                                    </div>
                                 </div>
-                            </a>
-                            <div class="card-description">
-                                <h3 class="card-title">Louis XVI ATHOS</h3>
-                                <h4 class="card-price">165 000 руб. </h4>
-                            </div>
-                        </div>
-                        <div class="card">
-                            <a href="#">
-                                <div class="card-pic-block">
-                                    <img src="./img/watch.webp" width="1"
-                                        height="1" alt="watch" class="card-img"
-                                        loading="lazy">
+                                <div class="swiper-slide">
+                                    <div class="card">
+                                        <a href="#">
+                                            <div class="card-pic-block">
+                                                <img src="./img/watch.webp"
+                                                    width="1" height="1"
+                                                    alt="watch" class="card-img"
+                                                    loading="lazy">
+                                            </div>
+                                        </a>
+                                        <div class="card-description">
+                                            <h3 class="card-title">Louis XVI
+                                                ATHOS</h3>
+                                            <h4 class="card-price">165 000 руб.
+                                            </h4>
+                                        </div>
+                                    </div>
                                 </div>
-                            </a>
-                            <div class="card-description">
-                                <h3 class="card-title">Louis XVI ATHOS</h3>
-                                <h4 class="card-price">165 000 руб. </h4>
                             </div>
+                            <!-- If we need pagination -->
+                            <div class="swiper-pagination"></div>
                         </div>
                     </div>
                 </div>
@@ -220,101 +244,130 @@
         <div class="container">
             <h2 class="section-title">Новые поступления</h2>
             <div class="new-products-cards">
-                <div class="card">
-                    <a href="#">
-                        <div class="card-pic-block">
-                            <img src="./img/watch.webp" width="1" height="1"
-                                alt="watch" class="card-img" loading="lazy">
+                <div class="swiper-container products-slider">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <div class="card">
+                                <a href="#">
+                                    <div class="card-pic-block">
+                                        <img src="./img/watch.webp" width="1"
+                                            height="1" alt="watch"
+                                            class="card-img" loading="lazy">
+                                    </div>
+                                </a>
+                                <div class="card-description">
+                                    <h3 class="card-title">Louis XVI ATHOS</h3>
+                                    <h4 class="card-price">165 000 руб. </h4>
+                                </div>
+                            </div>
                         </div>
-                    </a>
-                    <div class="card-description">
-                        <h3 class="card-title">Louis XVI ATHOS</h3>
-                        <h4 class="card-price">165 000 руб. </h4>
-                    </div>
-                </div>
-                <div class="card">
-                    <a href="#">
-                        <div class="card-pic-block">
-                            <img src="./img/watch.webp" width="1" height="1"
-                                alt="watch" class="card-img" loading="lazy">
+                        <div class="swiper-slide">
+                            <div class="card">
+                                <a href="#">
+                                    <div class="card-pic-block">
+                                        <img src="./img/watch.webp" width="1"
+                                            height="1" alt="watch"
+                                            class="card-img" loading="lazy">
+                                    </div>
+                                </a>
+                                <div class="card-description">
+                                    <h3 class="card-title">Louis XVI ATHOS</h3>
+                                    <h4 class="card-price">165 000 руб. </h4>
+                                </div>
+                            </div>
                         </div>
-                    </a>
-                    <div class="card-description">
-                        <h3 class="card-title">Louis XVI ATHOS</h3>
-                        <h4 class="card-price">165 000 руб. </h4>
-                    </div>
-                </div>
-                <div class="card">
-                    <a href="#">
-                        <div class="card-pic-block">
-                            <img src="./img/watch.webp" width="1" height="1"
-                                alt="watch" class="card-img" loading="lazy">
+                        <div class="swiper-slide">
+                            <div class="card">
+                                <a href="#">
+                                    <div class="card-pic-block">
+                                        <img src="./img/watch.webp" width="1"
+                                            height="1" alt="watch"
+                                            class="card-img" loading="lazy">
+                                    </div>
+                                </a>
+                                <div class="card-description">
+                                    <h3 class="card-title">Louis XVI ATHOS</h3>
+                                    <h4 class="card-price">165 000 руб. </h4>
+                                </div>
+                            </div>
                         </div>
-                    </a>
-                    <div class="card-description">
-                        <h3 class="card-title">Louis XVI ATHOS</h3>
-                        <h4 class="card-price">165 000 руб. </h4>
-                    </div>
-                </div>
-                <div class="card">
-                    <a href="#">
-                        <div class="card-pic-block">
-                            <img src="./img/watch.webp" width="1" height="1"
-                                alt="watch" class="card-img" loading="lazy">
+                        <div class="swiper-slide">
+                            <div class="card">
+                                <a href="#">
+                                    <div class="card-pic-block">
+                                        <img src="./img/watch.webp" width="1"
+                                            height="1" alt="watch"
+                                            class="card-img" loading="lazy">
+                                    </div>
+                                </a>
+                                <div class="card-description">
+                                    <h3 class="card-title">Louis XVI ATHOS</h3>
+                                    <h4 class="card-price">165 000 руб. </h4>
+                                </div>
+                            </div>
                         </div>
-                    </a>
-                    <div class="card-description">
-                        <h3 class="card-title">Louis XVI ATHOS</h3>
-                        <h4 class="card-price">165 000 руб. </h4>
-                    </div>
-                </div>
-                <div class="card">
-                    <a href="#">
-                        <div class="card-pic-block">
-                            <img src="./img/watch.webp" width="1" height="1"
-                                alt="watch" class="card-img" loading="lazy">
+                        <div class="swiper-slide">
+                            <div class="card">
+                                <a href="#">
+                                    <div class="card-pic-block">
+                                        <img src="./img/watch.webp" width="1"
+                                            height="1" alt="watch"
+                                            class="card-img" loading="lazy">
+                                    </div>
+                                </a>
+                                <div class="card-description">
+                                    <h3 class="card-title">Louis XVI ATHOS</h3>
+                                    <h4 class="card-price">165 000 руб. </h4>
+                                </div>
+                            </div>
                         </div>
-                    </a>
-                    <div class="card-description">
-                        <h3 class="card-title">Louis XVI ATHOS</h3>
-                        <h4 class="card-price">165 000 руб. </h4>
-                    </div>
-                </div>
-                <div class="card">
-                    <a href="#">
-                        <div class="card-pic-block">
-                            <img src="./img/watch.webp" width="1" height="1"
-                                alt="watch" class="card-img" loading="lazy">
+                        <div class="swiper-slide">
+                            <div class="card">
+                                <a href="#">
+                                    <div class="card-pic-block">
+                                        <img src="./img/watch.webp" width="1"
+                                            height="1" alt="watch"
+                                            class="card-img" loading="lazy">
+                                    </div>
+                                </a>
+                                <div class="card-description">
+                                    <h3 class="card-title">Louis XVI ATHOS</h3>
+                                    <h4 class="card-price">165 000 руб. </h4>
+                                </div>
+                            </div>
                         </div>
-                    </a>
-                    <div class="card-description">
-                        <h3 class="card-title">Louis XVI ATHOS</h3>
-                        <h4 class="card-price">165 000 руб. </h4>
-                    </div>
-                </div>
-                <div class="card">
-                    <a href="#">
-                        <div class="card-pic-block">
-                            <img src="./img/watch.webp" width="1" height="1"
-                                alt="watch" class="card-img" loading="lazy">
+                        <div class="swiper-slide">
+                            <div class="card">
+                                <a href="#">
+                                    <div class="card-pic-block">
+                                        <img src="./img/watch.webp" width="1"
+                                            height="1" alt="watch"
+                                            class="card-img" loading="lazy">
+                                    </div>
+                                </a>
+                                <div class="card-description">
+                                    <h3 class="card-title">Louis XVI ATHOS</h3>
+                                    <h4 class="card-price">165 000 руб. </h4>
+                                </div>
+                            </div>
                         </div>
-                    </a>
-                    <div class="card-description">
-                        <h3 class="card-title">Louis XVI ATHOS</h3>
-                        <h4 class="card-price">165 000 руб. </h4>
-                    </div>
-                </div>
-                <div class="card">
-                    <a href="#">
-                        <div class="card-pic-block">
-                            <img src="./img/watch.webp" width="1" height="1"
-                                alt="watch" class="card-img" loading="lazy">
+                        <div class="swiper-slide">
+                            <div class="card">
+                                <a href="#">
+                                    <div class="card-pic-block">
+                                        <img src="./img/watch.webp" width="1"
+                                            height="1" alt="watch"
+                                            class="card-img" loading="lazy">
+                                    </div>
+                                </a>
+                                <div class="card-description">
+                                    <h3 class="card-title">Louis XVI ATHOS</h3>
+                                    <h4 class="card-price">165 000 руб. </h4>
+                                </div>
+                            </div>
                         </div>
-                    </a>
-                    <div class="card-description">
-                        <h3 class="card-title">Louis XVI ATHOS</h3>
-                        <h4 class="card-price">165 000 руб. </h4>
                     </div>
+                    <div class="swiper-pagination"></div>
                 </div>
             </div>
         </div>
@@ -385,13 +438,13 @@
         </div>
     </footer>
 
-    <script>
-        burgerBtnOpen.onclick = () => burgerMenu.classList.add('open');
-        burgerBtnClose.onclick = () => burgerMenu.classList.remove('open');
-        window.addEventListener('load', ev => {
-            burgerMenu.classList.add('transition')
-        });
-    </script>
+    <link rel="preload" as="style"
+        href="https://unpkg.com/swiper/swiper-bundle.css" type="text/css">
+    <link rel="stylesheet"
+        href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+
+    <script defer src="./js/app.js"></script>
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
 </body>
 
 </html>

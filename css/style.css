@@ -820,7 +820,7 @@ h1::after {
     margin: 20px auto 0 auto;
   }
   .collection-image {
-    width: 496px;
+    width: 493px;
     height: 411px;
   }
   .cta {
@@ -1031,6 +1031,106 @@ h1::after {
 @media (max-width: 575.98px) {
   .container {
     width: 100%;
+  }
+  .section-title {
+    font-size: 24px;
+  }
+  .btn {
+    font-size: 12px;
+  }
+  .mobile-header .info-part {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .burger-menu {
+    width: 100%;
+  }
+  .burger-btn {
+    font-size: 16px;
+  }
+  .burger-btn.close {
+    right: 1px;
+    top: 39px;
+  }
+  .hero-section {
+    padding: 70px 0;
+  }
+  .logo-group {
+    padding: 67px 37px;
+    margin-bottom: 50px;
+  }
+  .hero-text {
+    width: 274px;
+    font-size: 14px;
+  }
+  .collection-image {
+    width: 303px;
+    height: 252px;
+  }
+  .cta {
+    left: 27px;
+    bottom: 30px;
+  }
+  .swiper-container .swiper-pagination-bullet {
+    background: #fff;
+  }
+  .cards-block .card-img {
+    width: 170px;
+  }
+  .collection-content {
+    padding: 0 16px;
+  }
+  .new-products .section-title {
+    margin-bottom: 30px;
+  }
+  .new-products-cards {
+    height: 810px;
+  }
+  .swiper-container.products-slider,
+  .swiper-container.collection-slider {
+    width: 100%;
+    height: 100%;
+    padding-top: 10px;
+    padding-bottom: 50px;
+  }
+  .products-slider .swiper-slide,
+  .collection-slider .swiper-slide {
+    text-align: center;
+    font-size: 18px;
+    height: calc((100% - 30px) / 2);
+
+    /* Center slide text vertically */
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    -webkit-justify-content: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    -webkit-align-items: center;
+    align-items: center;
+  }
+  .brands {
+    justify-content: center;
+  }
+  .about,
+  .categories,
+  .mailing {
+    width: 100%;
+    padding: 0;
+  }
+  .categories-btn:nth-child(n + 4) {
+    margin-top: 20px;
+  }
+  .input {
+    width: 170px;
+    padding: 10px;
+  }
+  .btn-form {
+    padding: 10px 7px;
   }
 }
 /* ============ ADAPTIVE END ============ */
