@@ -801,6 +801,15 @@ h1::after {
     left: 128px;
     bottom: 50px;
   }
+  .collection-products {
+    padding-left: 25px;
+  }
+  .swiper-container.products-slider,
+  .swiper-container.collection-slider {
+    width: 100%;
+    height: 100%;
+    padding: 10px 10px 50px 10px;
+  }
   .btn {
     font-size: 14px;
   }
@@ -820,7 +829,7 @@ h1::after {
     margin: 20px auto 0 auto;
   }
   .collection-image {
-    width: 493px;
+    width: 488px;
     height: 411px;
   }
   .cta {
@@ -922,6 +931,10 @@ h1::after {
   }
   .cards-block .card-img {
     width: 160px;
+  }
+  .swiper-container.products-slider,
+  .swiper-container.collection-slider {
+    text-align: center;
   }
   .collection-content {
     margin-top: 50px;
@@ -1086,13 +1099,7 @@ h1::after {
   .new-products-cards {
     height: 810px;
   }
-  .swiper-container.products-slider,
-  .swiper-container.collection-slider {
-    width: 100%;
-    height: 100%;
-    padding-top: 10px;
-    padding-bottom: 50px;
-  }
+
   .products-slider .swiper-slide,
   .collection-slider .swiper-slide {
     text-align: center;

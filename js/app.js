@@ -24,7 +24,7 @@ const collectionSlider = new Swiper('.collection-slider', {
             allowSlideNext: false,
             allowSlidePrev: false,
             slidesPerView: 3,
-            spaceBetween: 0,
+            spaceBetween: 20,
         },
     },
   
@@ -35,10 +35,10 @@ const collectionSlider = new Swiper('.collection-slider', {
 
   const productsSlider = new Swiper(".products-slider", {
     lazy: true,
-    slidesPerColumn: 2,
     breakpoints: {
         320: {
             slidesPerView: 1,
+            slidesPerColumn: 2,
             spaceBetween: 30,
             pagination: {
                 el: ".swiper-pagination",
@@ -46,7 +46,14 @@ const collectionSlider = new Swiper('.collection-slider', {
             },
         },
         576: {
-            slidesPerView: 8,
-        }
-    }
+            slidesPerView: 3,
+            slidesPerColumn: 3,
+            spaceBetween: 40,
+        },
+        768: {
+            slidesPerView: 4,
+            slidesPerColumn: 2,
+            spaceBetween: 50,
+        },
+    },
   });
