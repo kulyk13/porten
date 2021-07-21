@@ -328,13 +328,9 @@ span,
   text-decoration: none;
   color: inherit;
 }
-
 button {
   background-color: transparent;
   color: #fff;
-}
-button:hover,
-button:focus-within {
 }
 .container {
   max-width: 1140px;
@@ -618,7 +614,10 @@ h1::after {
 .new-products .section-title {
   margin-bottom: 80px;
 }
-.new-products-cards {
+.new-products-cards.with-slider {
+  display: none;
+}
+.new-products-cards.without-slider {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
@@ -1024,11 +1023,12 @@ h1::after {
     width: 500px;
   }
   .collection-image {
-    width: 559px;
-    height: 464px;
+    width: 100%;
+    height: auto;
   }
   .cta {
-    left: 123px;
+    left: calc(50% - 156.5px);
+    bottom: calc(50% - 150px);
   }
   .cards-block .card-img {
     width: 125px;
@@ -1076,12 +1076,8 @@ h1::after {
     width: 274px;
     font-size: 14px;
   }
-  .collection-image {
-    width: 303px;
-    height: 252px;
-  }
   .cta {
-    left: 27px;
+    left: calc(50% - 125px);
     bottom: 30px;
   }
   .swiper-container .swiper-pagination-bullet {
@@ -1099,7 +1095,13 @@ h1::after {
   .new-products-cards {
     height: 810px;
   }
-
+  .new-products-cards.with-slider {
+    display: block;
+    font-family: "Playfair Display", serif;
+  }
+  .new-products-cards.without-slider {
+    display: none;
+  }
   .products-slider .swiper-slide,
   .collection-slider .swiper-slide {
     text-align: center;

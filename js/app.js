@@ -35,25 +35,11 @@ const collectionSlider = new Swiper('.collection-slider', {
 
   const productsSlider = new Swiper(".products-slider", {
     lazy: true,
-    breakpoints: {
-        320: {
-            slidesPerView: 1,
-            slidesPerColumn: 2,
-            spaceBetween: 30,
-            pagination: {
-                el: ".swiper-pagination",
-                clickable: true,
-            },
-        },
-        576: {
-            slidesPerView: 3,
-            slidesPerColumn: 3,
-            spaceBetween: 40,
-        },
-        768: {
-            slidesPerView: 4,
-            slidesPerColumn: 2,
-            spaceBetween: 50,
-        },
+    slidesPerColumn: 2,
+    slidesPerView: 1,
+    spaceBetween: 30,
+    pagination: {
+        el: ".swiper-pagination",
+        clickable: true,
     },
   });
